@@ -1,0 +1,23 @@
+{
+  "name": "videoplay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tahlil/ElectronVideoPlayer.git"
+  },
+  "author": "Tahlil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tahlil/ElectronVideoPlayer/issues"
+  },
+  "homepage": "https://github.com/Tahlil/ElectronVideoPlayer#readme",
+  "dependencies": {
+    "electron": "^4.0.1",
+    "iohook": "^0.3.1"
+  }
+}
