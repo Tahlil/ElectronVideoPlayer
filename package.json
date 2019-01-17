@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "electron": "electron ."
+    "postinstall": "install-app-deps",
+    "electron": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
   },
   "build": {
-    "appId": "yourappid",
-    "category": "your.app.category.type",
+    "appId": "803803",
     "dmg": {
       "contents": [
         {
@@ -30,8 +32,7 @@
       ]
     },
     "win": {
-      "target": "squirrel",
-      "icon": "build/icon.ico"
+      "target": "NSIS"
     }
   },
   "repository": {

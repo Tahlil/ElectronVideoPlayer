@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: videoplay-setup-1.0.0.exe
+    sha512: e6BLaxWc2cv+uPVjwBCkmHrX3Dv9vltqIxl0WuPh6ncZVic0VDvCkj1/qwEJLgmFEo6qMaXTU3kkXlRxd/zupQ==
+    size: 40436344
+path: videoplay-setup-1.0.0.exe
+sha512: e6BLaxWc2cv+uPVjwBCkmHrX3Dv9vltqIxl0WuPh6ncZVic0VDvCkj1/qwEJLgmFEo6qMaXTU3kkXlRxd/zupQ==
+releaseDate: '2019-01-17T09:22:44.362Z'
