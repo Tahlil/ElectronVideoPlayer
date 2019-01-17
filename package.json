@@ -6,6 +6,34 @@
   "scripts": {
     "electron": "electron ."
   },
+  "build": {
+    "appId": "yourappid",
+    "category": "your.app.category.type",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tahlil/ElectronVideoPlayer.git"
@@ -16,8 +44,32 @@
     "url": "https://github.com/Tahlil/ElectronVideoPlayer/issues"
   },
   "homepage": "https://github.com/Tahlil/ElectronVideoPlayer#readme",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.38.5",
+    "electron-rebuild": "^1.8.2"
+  },
   "dependencies": {
-    "electron": "^4.0.1",
-    "iohook": "^0.3.1"
+    "cmake-js": "^4.0.1",
+    "iohook": "^0.3.0"
+  },
+  "cmake-js": {
+    "runtime": "electron",
+    "runtimeVersion": "2.0.0"
+  },
+  "iohook": {
+    "targets": [
+      "node-64",
+      "electron-57"
+    ],
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
   }
 }
